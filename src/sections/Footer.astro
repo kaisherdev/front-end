@@ -1,0 +1,44 @@
+---
+const socialMedia = [
+  {
+    name:"Instagram",
+    icon:"/icons/instagram.svg",
+    url:"https://www.instagram.com/"
+  },
+  {
+    name:"X",
+    icon:"/icons/X-logo.svg",
+    url:"https://x.com/"
+  },
+  {
+    name:"Facebook",
+    icon:"/icons/facebook.svg",
+    url:"https://www.facebook.com/"
+  }
+]
+---
+
+<footer class="bg-gray-900/80 text-white">
+  <nav class="lg:flex gap-8 justify-between max-w-5xl lg:mx-auto mx-4  pt-16 pb-12">
+    <div class="lg:text-start text-center pb-4">
+      <h3 class="text-2xl font-bold">Eco-store</h3>
+      <ul >
+        <li><a href="#" class="hover:underline">Carreras profesionales</a></li>
+        <li><a href="http://localhost:4321/terms-and-conditions" class="hover:underline">Términos y condiciones</a></li>
+        <li><a href="/#about-us" class="hover:underline">Eco-store inc</a></li>
+      </ul>
+    </div>
+    <div class="social-media lg:text-start text-center ">
+      <h3 class="text-2xl font-bold">Redes sociales</h3>
+      <div class="flex lg:justify-start justify-center gap-4 pt-2">
+        {
+          socialMedia.map(({icon,url,name})=>(
+            <a href={url} target="_blank" role="link" rel="noopener" >
+              <img src={icon} class="size-6" alt={name} />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </nav>
+</footer>
