@@ -1,47 +1,114 @@
-# Astro Starter Kit: Minimal
+# 🚀 Proyecto: Eco-Store 🚀
+
+##  📌 Descripción
+
+Este es una landing page desarrollado con **Atro**, usando animaciones, efectos visuales y una IU optimizasa para una mejor experiencia del usuario y construido con fines didacticos.
+
+## 🎨 Tecnologías
+
+- **Astro** - Version 5.0
+- **TailwindCSS** - Version 4.0
+- **TypeScript**
+- **CSS animations**
+- **Git & GitHub**
+
+## 📂 Estructuras del proyecto
 
 ```sh
-npm create astro@latest -- --template minimal
+/src
+├── assets
+|   ├── icons
+|   |   ├── Close.astro
+|   |   └── Hamburger.astro
+|   ├── cart.svg
+|   ├── heart.svg
+|   └── profile.svg
+├── components
+|   ├── Furniture.astro
+|   ├── Header.astro
+|   ├── Healthcare.astro
+|   ├── InfoSection.astro
+|   └── SocialPill.astro
+├── content
+|   ├── furnitures
+|   |   ├── banco-pequeño.md
+|   |   └── cajonera.md
+|   ├── healthcares
+|   |   ├── cepillo-de-bambu.md
+|   |   └── serum-facial.md
+|   └── config.ts
+├── layouts
+|   └── Layout.astro
+├── pages
+|   ├── furniture
+|   |   └── [id].astro
+|   ├── healthcare
+|   |   └── [id].astro
+|   ├── 404.astro
+|   ├── index.astro
+|   └── terms-and-conditions.astro
+├── sections
+|   ├── Footer.astro
+|   └── Hero.astro
+├── styles
+|   └── global.css
+├── .editorconfig
+├── .gitignore
+├── astro.config.mjs
+├── package-lock.json
+├── package.json
+├── README.md
+└── tsconfig.json
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Instalación 🚀
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+1. Clona el repositorio:
 
-## 🚀 Project Structure
+```bash
+git clone https://github.com/kaisherdev/front-end.git
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+2. Instalación y actualización de dependencias:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```sh
+npm install
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+3. Inicializa el servidor de desarrollo:
 
-## 🧞 Commands
+```sh
+npm run dev
 
-All commands are run from the root of the project, from a terminal:
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 🔥 Características
 
-## 👀 Want to learn more?
+- Diseño **responsivo** adpatado para dispositivos móviles
+- **Animaciones** en el Header y Hero
+- Galería de **proyectos interactiva**
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📌 Contribución
+
+Si desaes contribuir:
+
+1. Haz un fork del repositorio
+2. Crea una rama con tu mejora
+
+```sh
+git checkout -b feature-new
+```
+
+3. Realiza los cambios y sube un commit estructurado
+
+```sh
+git commit -m "feat: mejora en proyectos con optimización de imágenes"
+
+```
+4. Haz un pull request.
+
+## 📜 Licencia
+
+Este proyecto está bajo licencia **MIT**
+
