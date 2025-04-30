@@ -1,0 +1,69 @@
+---
+const earthAlt = "Imagen referente a la tierra"
+const ecologyAlt = "Imagen de un foco con 2 hojas incrustadas"
+---
+
+<section >
+  <div id="about-us">
+    <h2 class="font-bold text-[#7c6a0a] text-3xl pt-16">¿Por qué nosotros?</h2>
+    <div class="lg:flex justify-evenly gap-8 pt-16">
+      <div class="earth lg:flex items-center gap-8 lg:w-1/2">
+        <img src="/img/earth.png" class="lg:pb-0 pb-2" alt={earthAlt} />
+        <p class="text-[#fa9500] text-2xl">
+          Nuestro misión es el compromiso con el medio ambiente garantizando el uso de
+          materiales 100% reciclables.
+        </p>
+      </div>
+      <div class="lg:flex items-center gap-8 lg:w-1/2">
+        <img src="/img/ecology.png" class="lg:pb-0 pb-2" alt={ecologyAlt} />
+        <p class="text-[#fa9500] text-2xl">
+          Innovando con estilo el diseño de nuestros muebles es único.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="gallery">
+    <h2 class="font-bold text-[#7c6a0a] text-3xl pt-16">Galeria de estilos</h2>
+    <div class="gallery-images [&>img]:aspect-square [&>img]:rounded-lg pt-16 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+      <img
+        src="/img/gallery-1.webp"
+        class="lg:w-[28vw] lg:h-[45vh] transform hover:scale-105 duration-300"
+        alt="Imagen dormitorio con espejo en la pared" />
+      <img src="/img/gallery-2.webp"
+        class="lg:w-[28vw] lg:h-[45vh] transform hover:scale-105 duration-300"
+        alt="Imagen de un comedor" />
+      <img
+        src="/img/gallery-3.webp"
+        class="lg:w-[28vw] lg:h-[45vh] transform hover:scale-105 duration-300"
+        alt="Imagen de un closet" />
+    </div>
+  </div>
+  <div class="location">
+    <h2 class="font-bold text-[#7c6a0a] text-3xl pt-16">Encuéntranos en</h2>
+    <div class="map pt-16">
+      <img src="/img/map.webp" class="aspect-video rounded-lg" alt="Imagen de mapa de google maps" />
+    </div>
+    <h3 class="text-[#fa9500] text-2xl font-bold pt-16">Centro Mayor Centro Comercial</h3>
+    <p class="text-[#fa9500] text-2xl font-light pt-8">Cl. La Libertad 32B Norte #123-51, Comuna de las Estrellas, La Victoria</p>
+  </div>
+</section>
+<style>
+  section .gallery-images img{
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+  }
+
+  @keyframes reveal{
+    from{
+      opacity: 0;
+      translate: 0 100px;
+      scale: .5;
+    }
+    to{
+      opacity: 1;
+      translate: 0 0;
+      scale: 1;
+    }
+  }
+</style>
